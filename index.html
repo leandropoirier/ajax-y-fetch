@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXCHANGE</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <!-- Link de Bootswatch -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
+    <!-- Link de Fontawesome -->
+    <script src="https://kit.fontawesome.com/f03e0db334.js" crossorigin="anonymous"></script>
+    <!-- Links  a Css  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="container-fluid">
+
+    <header>
+        <div class="contenedor">
+            <nav>
+                <div class="enlaces d-flex justify-content-between ">
+                    <a class="logotipo" href="#">Exchange</a>
+                    <a href="#">Cotizaciones</a>
+                    <a href="#">Mi cuenta</a>
+                    <a href="#">Ayuda</a>
+                    <div class="d-grid gap-2 row-6 d-md-flex justify-content-md-end">
+                        <button id="botonDarkMode" class="btn btn-dark btn-sm">Dark Mode</button>
+                        <button id="botonLightMode" class="btn btn-light btn-sm">Light Mode</button>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <!-- =====================================MAIN=========================== -->
+
+    <main>
+<div class="container">
+    <p id="tBody"></p>
+</div>
+
+
+        <!-- Creo el contenedor -->
+        <div class="contenedor">
+            <!-- Creo el grid general con 3 columnas-->
+            <div class="grid text-center" style="--bs-columns: 3;">
+                <!-- Divido el grid en 12 columnas -->
+                <div class="grid align-middle" style="--bs-columns: 12;">
+                    <div class="row">
+                        <div class=" col px-4 py-5 text-center fondo">
+                            <h1 class="title display-5 fw-bold">Exchange</h1>
+                            <div class="col-lg-6 mx-auto">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Formulario de ingreso de datos -->
+                    <div class="row ">
+                        <div class="col-lg-12 ">
+                            <form class="col-md-auto" id="formulario">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" required>
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <label for="monto" class="form-label">Ingresá el valor en $ que queres convertir</label>
+                                <input type="number" class="form-control" id="monto" name="monto" required>
+
+                                <button type="submit" class="btn btnStyle my-2" id="btnForm">Calcular cryptos</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MUESTRO LOS DATOS -->
+        <div class="datosIngresados row">
+            <div class="row">
+                <div class="col-12 text-center infoUsuarios" id="infoUsuarios"></div>
+            </div>
+            <!-- <button class="btn btnStyle btn-md px-4 gap-3 colorBoton m-3" id="botonIngresos"> Datos Ingresados
+            </button> -->
+            <div  class="row" id="datos">
+                <div id="datosIngresos"></div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-1 ">&copy; 2022 ritualcrypto.com</span>
+        </div>
+    </footer>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+    <!-- link de JS de Bootstrap 5.2-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html
